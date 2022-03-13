@@ -201,11 +201,11 @@ button {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  /* height: 30vh; */
 }
 .soft-skill{
-  margin: 0.5rem 1rem;
-  padding: 8px 15px;
+  margin: 0.5rem 0.5rem;
+  padding: 8px 10px;
   text-align: center;
   /* align-self: center; */
   border: 1px solid var(--green_color);
@@ -223,7 +223,7 @@ button {
   transform: scale(1.005);
 }
 .logo-img{
-  padding: 10px;
+  padding: 15px;
   border: var(--green_color) 3px solid;
   border-radius: 100%;
 }
@@ -300,7 +300,7 @@ button {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .title {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .normal-size {
