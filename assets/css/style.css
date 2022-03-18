@@ -232,33 +232,29 @@ button {
 .logo-img{
   width: 80px;
   padding: 10px;
-  border: var(--green_color) 3px solid;
+  /* border: var(--green_color) 3px solid; */
   border-radius: 100%;
 }
-
-.mywork{
-  
+.my-work{
+  width: 100%;
 }
-
 .works{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* height: 100%; */
 }
 
-.powr-instagram-feed{
-  padding: 1rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  /* width: 100vw; */
-}
 .work{
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  height: 15%;
+  width: 55%;
 }
 .work-img{
   width: 250px;
@@ -267,6 +263,14 @@ button {
   padding: 1rem;
   border-radius: 100%;
 }
+
+.work-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .work-description{
   margin: 1rem;
   width: 70%;
@@ -335,7 +339,7 @@ button {
     width: 75px;
     margin-top: 10px;
     padding: 10px;
-    border: var(--green_color) 3px solid;
+    /* border: var(--green_color) 3px solid; */
     border-radius: 100%;
   }
   .soft-skills-logos{
@@ -356,6 +360,16 @@ button {
   .programming-skills-logos{
     display: grid;
     grid-template-columns: auto auto auto auto;
+  }
+  .works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .work{
+    width: 90%;
   }
 }
 
