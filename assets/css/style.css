@@ -156,7 +156,7 @@ button {
 .about{
   margin: 0;
   padding: 0;
-  background-image: url('/assets/img/sky.png');
+  background-image: url('/assets/img/sky.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -191,6 +191,7 @@ button {
 }
 .skills{
   background-color: var(--white_color);
+  /* height: 100vh; */
 }
 .sub-skills{
   padding-top: 3rem;
@@ -213,23 +214,82 @@ button {
   border-radius: 55px;
   color: var(--white_color);
 }
+.soft-skill:hover{
+  background-color: var(--background_color);
+  color: var(--green_color);
+  transition: 0.1s;
+}
 .programming-skills-logos{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 
 .logo-img:hover{
-  transform: scale(1.005);
+  transform: scale(1.03);
+  transition: 0.1s;
 }
 .logo-img{
-  padding: 15px;
+  width: 80px;
+  padding: 10px;
   border: var(--green_color) 3px solid;
   border-radius: 100%;
 }
 
+.mywork{
+  
+}
 
+.works{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.powr-instagram-feed{
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  /* width: 100vw; */
+}
+.work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work-img{
+  width: 250px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 100%;
+}
+.work-description{
+  margin: 1rem;
+  width: 70%;
+  /* gap: 1rem; */
+}
+.work-button{
+  margin: 1rem;
+  border: var(--green_color) 1px solid;
+  border-radius: 15px;
+  width: 150px;
+  background-color: var(--background_color);
+  color: #9E3838;
+  cursor: pointer;
+  /* border: none; */
+  outline: none;
+}
+.work-button:hover{
+  border: var(--red_color) 1px solid;
+  border-radius: 15px;
+  background-color: var(--background_color);
+  color: var(--background_color);
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -240,7 +300,7 @@ button {
     width: 70%;
     height: 100%;
     margin-top: var(--header-height);
-    padding: calc(2rem var(--header-height) 2rem 3.5rem);
+    padding: calc(2rem var(--header-height)  3.5rem);
     transition: .3s ease-in-out;
   }
 
@@ -279,11 +339,11 @@ button {
   }
   .soft-skills-logos{
     display: flex;
-    grid-template-columns: auto auto;
+
     justify-content: space-around;
   }
   .soft-skill{
-    margin: 0.5rem 1rem;
+    width: 400px;
     padding: 10px 15px;
     text-align: center;
     /* align-self: center; */
@@ -292,10 +352,14 @@ button {
     border-radius: 55px;
     color: var(--white_color);
   }
+  .programming-skills-logos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 .nav-toggle:checked ~ .nav-menu {
-  left: 0;
+  left: 0px;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -359,6 +423,9 @@ button {
 
 .main {
   padding-top: calc(1rem + var(--header-height));
+}
+.text-align-center{
+  text-align: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
